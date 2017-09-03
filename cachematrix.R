@@ -10,8 +10,8 @@ makeCacheMatrix <- function(x = matrix()) {
 		m <<- NULL
 	}
 	get <- function() x
-	setsolve <- function(solve) m <<- solve
-	getsolve <- function() m
+	setinverse <- function(solve) m <<- solve
+	getinverse <- function() m
 	list(set = set, get = get,
 	     setinverse = setinverse,
 	     getinverse = getinverse)
